@@ -2,13 +2,14 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseAdapter;
 import javax.swing.*;
 
-public class MiddleConnectionEvent extends MouseAdapter{
+class MiddleConnectionEvent extends MouseAdapter{
 	static Client client;
 	static Server server;
 	static boolean isClient;
 	
 	public void mouserPressed(MouseEvent me) {
 		String name = me.getComponent().getName();
+		
 		if(name.equals("serverCheck")) {
 			Main.IpAdress.setEditable(false);
 			Main.isServer = true;
