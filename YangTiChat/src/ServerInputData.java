@@ -1,0 +1,4 @@
+
+class ServerInputData extends Thread{
+
+}

@@ -1,0 +1,4 @@
+
+class ServerAccept extends Thread{
+
+}
