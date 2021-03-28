@@ -7,7 +7,7 @@ class MiddleConnectionEvent extends MouseAdapter{
 	static Server server;
 	static boolean isClient;
 	
-	public void mouserPressed(MouseEvent me) {
+	public void mousePressed(MouseEvent me) {
 		String name = me.getComponent().getName();
 		
 		if(name.equals("serverCheck")) {

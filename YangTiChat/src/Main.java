@@ -23,7 +23,7 @@ public Main(String title) {
 	});
 	
 	Toolkit tk = Toolkit.getDefaultToolkit();
-	img = tk.getImage(".\\image\\background.png");
+	img = tk.getImage(".\\img\\background.png");
 	
 	nickName = new JTextField();
 	IpAdress = new JTextField();
@@ -101,8 +101,8 @@ public void setVisible() {
 }
 
 public static void main(String[] args){
-	Main multiChat = new Main("MultiChat");
-	mc = multiChat;						//인스턴스를 static 변수에 넣어두고
+	Main main = new Main("Main");
+	mc = main;						//인스턴스를 static 변수에 넣어두고
 }
 
 public static Main getInstance(){  //MiddleConnectionEvent에서 호출시 생성한 인스턴스를 넘겨준다
